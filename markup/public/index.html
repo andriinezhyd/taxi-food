@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project Title</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="bg-light" id="header">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-light px-0"><a class="navbar-brand" href="#">Taxi Food</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+							<!--ul.navbar-nav.mr-auto-->
+							<!--	li.nav-item.active-->
+							<!--		a.nav-link(href='#')-->
+							<!--			| Home-->
+							<!--			span.sr-only (current)-->
+							<!--	li.nav-item-->
+							<!--		a.nav-link(href='#') Link-->
+							<!--	li.nav-item-->
+							<!--		a.nav-link.disabled(href='#') Disabled-->
+							<form class="form-inline my-2 my-lg-0" id="form-search">
+								<select class="form-control mb-2 mb-sm-0 mr-sm-3" id="select-sort">
+									<option value="default" selected>Выберите порядок</option>
+									<option value="asc">По возрастанию</option>
+									<option value="desc">По убыванию</option>
+								</select>
+								<input class="form-control mr-sm-2" id="input-search" type="text" placeholder="Введите название">
+								<button class="btn btn-outline-info my-2 my-sm-0" id="btn-search" type="submit">Поиск</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main id="main" role="main"></main>
+			<!--include pug/common/_footer-->
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="module" src="js/jquery.main.js"></script>
+	</body>
+</html>
