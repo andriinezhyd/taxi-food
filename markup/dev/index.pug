@@ -1,0 +1,22 @@
+include pug/common/_head
+	block content
+			include pug/common/_header
+			main#main(role="main")
+				aside
+				section.section-products
+					.container-fluid
+						.row
+							.col-6.col-lg-4.col-xl-3
+								.card
+									.visual
+										img(src="")
+									.text
+										h5.title
+										p
+										span.caloricity
+										strong.price
+										a(href="#").wish-button
+											i.icon-heart
+										.on-hover
+											button.btn.btn-info(type='button') Добавить заказ
+			//include pug/common/_footer

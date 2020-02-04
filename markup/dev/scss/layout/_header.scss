@@ -1,0 +1,35 @@
+.cart {
+  font-size: 2rem;
+
+  a {
+    color: $gray;
+
+   &:hover {
+     text-decoration: none;
+   }
+
+    &.no-empty {
+      color: #34ce57;
+    }
+  }
+}
+
+.order-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-right: 0.5rem;
+  }
+}
+
+.item-price {
+  flex-grow: 1;
+  text-align: right;
+}
