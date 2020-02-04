@@ -33,16 +33,42 @@
 								<button class="btn btn-outline-info my-2 my-sm-0" id="btn-search" type="submit">Поиск</button>
 							</form>
 						</div>
+						<div class="cart"><a href="#"><i class="icon-cart"></i></a></div>
 					</nav>
 				</div>
 			</header>
-			<main id="main" role="main"></main>
+			<main id="main" role="main">
+				<aside></aside>
+				<section class="section-products">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-6 col-lg-4 col-xl-3">
+								<div class="card">
+									<div class="visual"><img src=""></div>
+									<div class="text">
+										<h5 class="title"></h5>
+										<p></p><span class="caloricity"></span><strong class="price"></strong><a class="wish-button" href="#"><i class="icon-heart"></i></a>
+										<div class="on-hover">
+											<button class="btn btn-info" type="button">Добавить заказ</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 			<!--include pug/common/_footer-->
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script type="module" src="js/jquery.main.js"></script>
+		<script src="js/list.js"></script>
+		<script src="js/model.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/jquery.main.js"></script>
 	</body>
 </html>
